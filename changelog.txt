@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2026-05-06
+  Bugfixes:
+    - Fixed a crash that occurs when attempting to modify a tile that doesn't exist (e.g. if Vesta rock islands are disabled)
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2026-02-19
   Features:
