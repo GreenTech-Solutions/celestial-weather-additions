@@ -16,7 +16,7 @@ if true then
         data.raw["planet"]["igrys"].surface_render_parameters = data.raw["planet"]["igrys"].surface_render_parameters or {}
         data.raw["planet"]["igrys"].surface_render_parameters.fog = igrys_fog
 
-        data.raw["tile"]["igrys-light-oil"].lowland_fog = true
+        if data.raw["tile"]["igrys-light-oil"] then data.raw["tile"]["igrys-light-oil"].lowland_fog = true end
     end
 
 

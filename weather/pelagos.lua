@@ -82,7 +82,7 @@ if true then
         data.raw["planet"]["pelagos"].surface_render_parameters = data.raw["planet"]["pelagos"].surface_render_parameters or {}
         data.raw["planet"]["pelagos"].surface_render_parameters.fog = pelagos_fog
 
-        data.raw["tile"]["pelagos-deepsea"].lowland_fog = true
+        if data.raw["tile"]["pelagos-deepsea"] then data.raw["tile"]["pelagos-deepsea"].lowland_fog = true end
     end
 
     if #pelagos_effects >= 1 then

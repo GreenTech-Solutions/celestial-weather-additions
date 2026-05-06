@@ -167,9 +167,9 @@ if true then
         data.raw["planet"]["alchemy-planet"].surface_render_parameters = data.raw["planet"]["alchemy-planet"].surface_render_parameters or {}
         data.raw["planet"]["alchemy-planet"].surface_render_parameters.fog = khemia_fog
 
-        data.raw["tile"]["dark-sandy-rocks"].lowland_fog = true
-        data.raw["tile"]["red-sandy-rocks"].lowland_fog = true
-        data.raw["tile"]["tan-sandy-rocks"].lowland_fog = true
+        if data.raw["tile"]["dark-sandy-rocks"] then data.raw["tile"]["dark-sandy-rocks"].lowland_fog = true end
+        if data.raw["tile"]["red-sandy-rocks"] then data.raw["tile"]["red-sandy-rocks"].lowland_fog = true end
+        if data.raw["tile"]["tan-sandy-rocks"] then data.raw["tile"]["tan-sandy-rocks"].lowland_fog = true end
     end
 
     if #khemia_effects >= 1 then

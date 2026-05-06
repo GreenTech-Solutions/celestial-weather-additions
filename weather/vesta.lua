@@ -15,21 +15,21 @@ if true then
         data.raw["planet"]["vesta"].surface_render_parameters["fog"] = vesta_fog
         data.raw["planet"]["vesta"].surface_render_parameters["clouds"] = nil
 
-        data.raw["tile"]["dust-flat-vesta"].lowland_fog = false
-        data.raw["tile"]["dust-crests-vesta"].lowland_fog = false
-        data.raw["tile"]["dust-lumpy-vesta"].lowland_fog = false
-        data.raw["tile"]["dust-patchy-vesta"].lowland_fog = false
-        data.raw["tile"]["ice-rough-vesta"].lowland_fog = false
-        data.raw["tile"]["ice-smooth-vesta"].lowland_fog = false
+        if data.raw["tile"]["dust-flat-vesta"] then data.raw["tile"]["dust-flat-vesta"].lowland_fog = false end
+        if data.raw["tile"]["dust-crests-vesta"] then data.raw["tile"]["dust-crests-vesta"].lowland_fog = false end
+        if data.raw["tile"]["dust-lumpy-vesta"] then data.raw["tile"]["dust-lumpy-vesta"].lowland_fog = false end
+        if data.raw["tile"]["dust-patchy-vesta"] then data.raw["tile"]["dust-patchy-vesta"].lowland_fog = false end
+        if data.raw["tile"]["ice-rough-vesta"] then data.raw["tile"]["ice-rough-vesta"].lowland_fog = false end
+        if data.raw["tile"]["ice-smooth-vesta"] then data.raw["tile"]["ice-smooth-vesta"].lowland_fog = false end
 
-        data.raw["tile"]["ammoniacal-ocean-vesta-pink"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-lime"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-yellow"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-yellow-ransom"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-red"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-red-ransom"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-tritium"].lowland_fog = true
-        data.raw["tile"]["ammoniacal-ocean-vesta-deuterium"].lowland_fog = true
+        if data.raw["tile"]["ammoniacal-ocean-vesta-pink"] then data.raw["tile"]["ammoniacal-ocean-vesta-pink"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-lime"] then data.raw["tile"]["ammoniacal-ocean-vesta-lime"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-yellow"] then data.raw["tile"]["ammoniacal-ocean-vesta-yellow"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-yellow-ransom"] then data.raw["tile"]["ammoniacal-ocean-vesta-yellow-ransom"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-red"] then data.raw["tile"]["ammoniacal-ocean-vesta-red"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-red-ransom"] then data.raw["tile"]["ammoniacal-ocean-vesta-red-ransom"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-tritium"] then data.raw["tile"]["ammoniacal-ocean-vesta-tritium"].lowland_fog = true end
+        if data.raw["tile"]["ammoniacal-ocean-vesta-deuterium"] then data.raw["tile"]["ammoniacal-ocean-vesta-deuterium"].lowland_fog = true end
     end
     
 

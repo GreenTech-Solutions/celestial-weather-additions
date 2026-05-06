@@ -25,9 +25,9 @@ if true then
         data.raw["planet"]["carna"].surface_render_parameters = data.raw["planet"]["carna"].surface_render_parameters or {}
         data.raw["planet"]["carna"].surface_render_parameters.fog = carna_fog
 
-        data.raw["tile"]["carna-plasma-edge"].lowland_fog = true
-        data.raw["tile"]["carna-plasma"].lowland_fog = true
-        data.raw["tile"]["carna-plasma-bright"].lowland_fog = true
+        if data.raw["tile"]["carna-plasma-edge"] then data.raw["tile"]["carna-plasma-edge"].lowland_fog = true end
+        if data.raw["tile"]["carna-plasma"] then data.raw["tile"]["carna-plasma"].lowland_fog = true end
+        if data.raw["tile"]["carna-plasma-bright"] then data.raw["tile"]["carna-plasma-bright"].lowland_fog = true end
     end
 
 

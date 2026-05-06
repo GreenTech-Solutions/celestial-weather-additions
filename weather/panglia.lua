@@ -169,9 +169,9 @@ if true then
         data.raw["planet"]["panglia"].surface_render_parameters = data.raw["planet"]["panglia"].surface_render_parameters or {}
         data.raw["planet"]["panglia"].surface_render_parameters.fog = panglia_fog
 
-        data.raw["tile"]["panglia_hidden_beacon_tile"].lowland_fog = true
-        data.raw["tile"]["panglia-wetland-light-dead-skin"].lowland_fog = false
-        data.raw["tile"]["panglia-wetland-dead-skin"].lowland_fog = false
+        if data.raw["tile"]["panglia_hidden_beacon_tile"] then data.raw["tile"]["panglia_hidden_beacon_tile"].lowland_fog = true end
+        if data.raw["tile"]["panglia-wetland-light-dead-skin"] then data.raw["tile"]["panglia-wetland-light-dead-skin"].lowland_fog = false end
+        if data.raw["tile"]["panglia-wetland-dead-skin"] then data.raw["tile"]["panglia-wetland-dead-skin"].lowland_fog = false end
     end
 
 
