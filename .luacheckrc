@@ -17,3 +17,14 @@ read_globals = {
 -- data-stage code writes into data.raw
 globals = { "data", "storage" }
 
+
+-- upstream style, kept as is so the code stays close to the original
+ignore = {
+  "611", "612", "613", "614", -- whitespace-only lines and trailing whitespace
+}
+files["weather/paracelsin.lua"] = {
+  ignore = {
+    "211", -- unused common_effects
+    "542", -- empty if branch
+  },
+}
