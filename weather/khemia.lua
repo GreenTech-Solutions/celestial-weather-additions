@@ -9,7 +9,7 @@ if true then
         local khemia_dust = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         khemia_dust.name = "khemia_dust"
         khemia_dust.color = {1.0, 0.875, 0.75}
-        khemia_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        khemia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         data.extend({khemia_dust})
 
         local khemia_weather_dust = table.deepcopy(common_effects.cluster_particles)
@@ -32,7 +32,7 @@ if true then
         khemia_sparks.fade_in_duration = 20
         khemia_sparks.fade_away_duration = 20
         khemia_sparks.render_layer = "smoke"
-        khemia_sparks.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        khemia_sparks.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         khemia_sparks.animation.frame_count = 1
         khemia_sparks.animation.line_length = 1
         khemia_sparks.animation.size = 512
@@ -61,7 +61,7 @@ if true then
         khemia_sparks_small.fade_away_duration = 20
         khemia_sparks_small.render_layer = "smoke"
         khemia_sparks_small.animation.blend_mode = "additive"
-        khemia_sparks_small.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        khemia_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         khemia_sparks_small.animation.frame_count = 1
         khemia_sparks_small.animation.line_length = 1
         khemia_sparks_small.animation.size = 512
@@ -89,7 +89,7 @@ if true then
         khemia_sparks_large.fade_away_duration = 20
         khemia_sparks_large.render_layer = "smoke"
         khemia_sparks_large.animation.blend_mode = "additive"
-        khemia_sparks_large.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        khemia_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         khemia_sparks_large.animation.frame_count = 1
         khemia_sparks_large.animation.line_length = 1
         khemia_sparks_large.animation.size = 512
@@ -110,7 +110,7 @@ if true then
         local khemia_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         khemia_cloud_a.name = "khemia_cloud_a"
         khemia_cloud_a.color = {255.0/255.0 * 0.2, 192.0/255.0 * 0.2, 224.0/255.0 * 0.2, 1.0 * 0.2}
-        khemia_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        khemia_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         khemia_cloud_a.animation.frame_count = 1
         khemia_cloud_a.animation.size = 512
         khemia_cloud_a.start_scale = 3.0
@@ -135,7 +135,7 @@ if true then
         local khemia_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         khemia_cloud_b.name = "khemia_cloud_b"
         khemia_cloud_b.color = {255.0/255.0 * 0.2, 192.0/255.0 * 0.2, 224.0/255.0 * 0.2, 1.0 * 0.2}
-        khemia_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        khemia_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         khemia_cloud_b.animation.frame_count = 1
         khemia_cloud_b.animation.size = 512
         khemia_cloud_b.start_scale = 3.0
@@ -161,7 +161,7 @@ if true then
         khemia_fog.color1 = settings.startup["shibadisaster-cwa-khemia-fog-color"].value
         khemia_fog.color2 = settings.startup["shibadisaster-cwa-khemia-fog-color"].value
         khemia_fog.tick_factor = 0.000001
-        khemia_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/tess-fog.png"
+        khemia_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         khemia_fog.fog_type = "gleba"
 
         data.raw["planet"]["alchemy-planet"].surface_render_parameters = data.raw["planet"]["alchemy-planet"].surface_render_parameters or {}

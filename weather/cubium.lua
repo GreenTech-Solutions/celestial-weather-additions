@@ -8,7 +8,7 @@ if true then
         local cubium_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         cubium_cloud_a.name = "cubium_cloud_a"
         cubium_cloud_a.color = {59.0/255.0 * 0.25, 36.0/255.0 * 0.25, 107.0/255.0 * 0.25, 1.0 * 0.25}
-        cubium_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        cubium_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         cubium_cloud_a.animation.frame_count = 1
         cubium_cloud_a.animation.size = 512
         cubium_cloud_a.animation.blend_mode = "additive"
@@ -31,7 +31,7 @@ if true then
         local cubium_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         cubium_cloud_b.name = "cubium_cloud_b"
         cubium_cloud_b.color = {47.0/255.0 * 0.25, 63.0/255.0 * 0.25, 119.0/255.0 * 0.25, 1.0 * 0.25}
-        cubium_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        cubium_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         cubium_cloud_b.animation.frame_count = 1
         cubium_cloud_b.animation.size = 512
         cubium_cloud_b.animation.blend_mode = "additive"
@@ -63,7 +63,7 @@ if true then
         cubium_sparks_small.fade_in_duration = 40
         cubium_sparks_small.fade_away_duration = 40
         cubium_sparks_small.render_layer = "smoke"
-        cubium_sparks_small.animation.filename = "__celestial-weather-additions__/graphics/vfx/pointy-spark-a.png"
+        cubium_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/pointy-spark-a.png"
         cubium_sparks_small.animation.frame_count = 100
         cubium_sparks_small.animation.line_length = 10
         cubium_sparks_small.animation.size = math.floor(2048 / 10)
@@ -92,7 +92,7 @@ if true then
         cubium_sparks_large.fade_in_duration = 40
         cubium_sparks_large.fade_away_duration = 40
         cubium_sparks_large.render_layer = "smoke"
-        cubium_sparks_large.animation.filename = "__celestial-weather-additions__/graphics/vfx/pointy-spark-a.png"
+        cubium_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/pointy-spark-a.png"
         cubium_sparks_large.animation.frame_count = 100
         cubium_sparks_large.animation.line_length = 10
         cubium_sparks_large.animation.size = math.floor(2048 / 10)

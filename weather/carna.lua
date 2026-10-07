@@ -18,8 +18,8 @@ if true then
         carna_fog.color1 = settings.startup["shibadisaster-cwa-carna-plasma-fog-color-1"].value
         carna_fog.color2 = settings.startup["shibadisaster-cwa-carna-plasma-fog-color-2"].value
         carna_fog.tick_factor = 0.001 --0.000005
-        carna_fog.shape_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/solid.png"
-        -- carna_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/tess-fog.png"
+        carna_fog.shape_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/solid.png"
+        -- carna_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         carna_fog.fog_type = "gleba"
 
         data.raw["planet"]["carna"].surface_render_parameters = data.raw["planet"]["carna"].surface_render_parameters or {}
@@ -41,7 +41,7 @@ if true then
         carna_sparks.fade_in_duration = 60
         carna_sparks.fade_away_duration = 60
         carna_sparks.render_layer = "smoke"
-        carna_sparks.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        carna_sparks.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         carna_sparks.animation.blend_mode = "additive"
         data:extend({carna_sparks})
 
@@ -67,7 +67,7 @@ if true then
         carna_sparks_large.fade_in_duration = 60
         carna_sparks_large.fade_away_duration = 60
         carna_sparks_large.render_layer = "smoke"
-        carna_sparks_large.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        carna_sparks_large.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         carna_sparks_large.animation.blend_mode = "additive"
         data:extend({carna_sparks_large})
 
@@ -93,7 +93,7 @@ if true then
         carna_sparks_small.fade_in_duration = 60
         carna_sparks_small.fade_away_duration = 60
         carna_sparks_small.render_layer = "smoke"
-        carna_sparks_small.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        carna_sparks_small.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         carna_sparks_small.animation.blend_mode = "additive"
         data:extend({carna_sparks_small})
 

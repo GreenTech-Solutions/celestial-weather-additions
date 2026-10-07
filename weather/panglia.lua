@@ -14,7 +14,7 @@ if true then
         panglia_sparks.fade_in_duration = 60
         panglia_sparks.fade_away_duration = 60
         panglia_sparks.render_layer = "smoke"
-        panglia_sparks.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        panglia_sparks.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks.animation.frame_count = 1
         -- panglia_sparks.animation.line_length = 1
         -- panglia_sparks.animation.size = 512
@@ -42,7 +42,7 @@ if true then
         panglia_sparks_small.fade_in_duration = 60
         panglia_sparks_small.fade_away_duration = 60
         panglia_sparks_small.render_layer = "smoke"
-        panglia_sparks_small.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        panglia_sparks_small.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks_small.animation.frame_count = 1
         -- panglia_sparks_small.animation.line_length = 1
         -- panglia_sparks_small.animation.size = 512
@@ -70,7 +70,7 @@ if true then
         panglia_sparks_large.fade_in_duration = 60
         panglia_sparks_large.fade_away_duration = 60
         panglia_sparks_large.render_layer = "smoke"
-        panglia_sparks_large.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        panglia_sparks_large.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks_large.animation.frame_count = 1
         -- panglia_sparks_large.animation.line_length = 1
         -- panglia_sparks_large.animation.size = 512
@@ -92,7 +92,7 @@ if true then
         local panglia_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         panglia_cloud_a.name = "panglia_cloud_a"
         panglia_cloud_a.color = {191.0/255.0 * 0.15, 255.0/255.0 * 0.15, 126.0/255.0 * 0.15, 1.0}
-        panglia_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        panglia_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         panglia_cloud_a.animation.frame_count = 1
         panglia_cloud_a.animation.size = 512
         panglia_cloud_a.start_scale = 2.0
@@ -116,7 +116,7 @@ if true then
         local panglia_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         panglia_cloud_b.name = "panglia_cloud_b"
         panglia_cloud_b.color = {126.0/255.0 * 0.15, 255.0/255.0 * 0.15, 191.0/255.0 * 0.15, 1.0}
-        panglia_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-b.png"
+        panglia_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-b.png"
         panglia_cloud_b.animation.frame_count = 1
         panglia_cloud_b.animation.size = 512
         panglia_cloud_b.start_scale = 2.0
@@ -142,7 +142,7 @@ if true then
         local panglia_dust = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         panglia_dust.name = "panglia_dust"
         panglia_dust.color = {126.0/255.0, 255.0/255.0, 236.0/255.0}
-        panglia_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        panglia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         data.extend({panglia_dust})
 
         local panglia_weather_dust = table.deepcopy(common_effects.cluster_particles)
@@ -162,8 +162,8 @@ if true then
         -- panglia_fog.color1 = {255.0/255.0, 0.0/255.0, 0.0/255.0}
         -- panglia_fog.color2 = {255.0/255.0, 0.0/255.0, 0.0/255.0}
         panglia_fog.tick_factor = 0.00070 * settings.startup["shibadisaster-cwa-panglia-antilinear-fog-speed-multiplier"].value
-        -- panglia_fog.shape_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/solid.png"
-        panglia_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/tess-fog.png"
+        -- panglia_fog.shape_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/solid.png"
+        panglia_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         panglia_fog.fog_type = "gleba"
 
         data.raw["planet"]["panglia"].surface_render_parameters = data.raw["planet"]["panglia"].surface_render_parameters or {}

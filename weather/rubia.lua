@@ -36,7 +36,7 @@ if true then
     --     rubia_fog.color1 = {0.822, 0.700, 0.564, 0.5}
     --     rubia_fog.color2 = {0.822, 0.700, 0.564, 0.5}
     --     rubia_fog.tick_factor = 0.003
-    --     rubia_fog.detail_noise_texture.filename = "__celestial-weather__/graphics/entity/dense-clouds.png"
+    --     rubia_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
 
     --     data.raw["planet"]["rubia"].surface_render_parameters["fog"] = rubia_fog
     -- end
@@ -52,7 +52,7 @@ if true then
         rubia_clouds.fade_in_duration = 30
         rubia_clouds.fade_away_duration = 30
         rubia_clouds.render_layer = "air-entity-info-icon"
-        rubia_clouds.animation.filename = "__celestial-weather-additions__/graphics/vfx/diffuse-cloud.png"
+        rubia_clouds.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/diffuse-cloud.png"
         rubia_clouds.animation.frame_count = 1
         rubia_clouds.animation.size = 512
         data:extend({rubia_clouds})
@@ -78,7 +78,7 @@ if true then
         rubia_clouds_b.fade_in_duration = 30
         rubia_clouds_b.fade_away_duration = 30
         rubia_clouds_b.render_layer = "air-entity-info-icon"
-        rubia_clouds_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        rubia_clouds_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         rubia_clouds_b.animation.frame_count = 1
         rubia_clouds_b.animation.size = 512
         data:extend({rubia_clouds_b})
@@ -105,7 +105,7 @@ if true then
         rubia_dust.duration = 60
         rubia_dust.fade_in_duration = 30
         rubia_dust.fade_away_duration = 30
-        rubia_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        rubia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         data.extend({rubia_dust})
 
         local rubia_weather_dust = table.deepcopy(common_effects.cluster_particles)

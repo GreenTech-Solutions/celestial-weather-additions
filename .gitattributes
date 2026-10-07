@@ -1,2 +1,20 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# files that should not be modified
+*.png binary
+*.xcf binary export-ignore
+
+# files that should not get included in a release zip
+README.md export-ignore
+.vscode export-ignore
+.github export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.releaserc export-ignore
+# release tooling and checks, not part of the mod
+package.json export-ignore
+pnpm-lock.yaml export-ignore
+.luacheckrc export-ignore
+.emmyrc.json export-ignore
+tools export-ignore

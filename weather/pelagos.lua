@@ -7,15 +7,15 @@ if true then
 
     if settings.startup["shibadisaster-cwa-pelagos-enable-tropical-recolor"].value then
         data.raw["planet"]["pelagos"].surface_render_parameters.day_night_cycle_color_lookup = {
-            {0.00000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_day.png"},
-            {0.00000001, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_day.png"},
-            {0.25000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_day.png"},
-            {0.30000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_dusk.png"},
-            {0.35000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_night.png"},
-            {0.65000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_night.png"},
-            {0.70000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_dusk.png"},
-            {0.75000000, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_day.png"},
-            {0.99999999, "__celestial-weather-additions__/graphics/luts/tropical_pelagos_day.png"}
+            {0.00000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_day.png"},
+            {0.00000001, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_day.png"},
+            {0.25000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_day.png"},
+            {0.30000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_dusk.png"},
+            {0.35000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_night.png"},
+            {0.65000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_night.png"},
+            {0.70000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_dusk.png"},
+            {0.75000000, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_day.png"},
+            {0.99999999, "__celestial-weather-additions-updated__/graphics/luts/tropical_pelagos_day.png"}
         }
     end
 
@@ -24,7 +24,7 @@ if true then
         local pelagos_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         pelagos_cloud_a.name = "pelagos_cloud_a"
         pelagos_cloud_a.color = {255.0/255.0 * 0.1, 255.0/255.0 * 0.1, 255.0/255.0 * 0.1, 1.0 * 0.1}
-        pelagos_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        pelagos_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         pelagos_cloud_a.animation.frame_count = 1
         pelagos_cloud_a.animation.size = 512
         pelagos_cloud_a.start_scale = 3.0
@@ -47,7 +47,7 @@ if true then
         local pelagos_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         pelagos_cloud_b.name = "pelagos_cloud_b"
         pelagos_cloud_b.color = {255.0/255.0 * 0.1, 255.0/255.0 * 0.1, 255.0/255.0 * 0.1, 1.0 * 0.1}
-        pelagos_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-b.png"
+        pelagos_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-b.png"
         pelagos_cloud_b.animation.frame_count = 1
         pelagos_cloud_b.animation.size = 512
         pelagos_cloud_b.start_scale = 3.0
@@ -73,9 +73,9 @@ if true then
         pelagos_fog.color1 = {224.0/255.0, 224.0/255.0, 255.0/255.0}
         pelagos_fog.color2 = {224.0/255.0, 224.0/255.0, 255.0/255.0}
         pelagos_fog.tick_factor = 0.000005
-        pelagos_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/caustics-fog.png"
+        pelagos_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/caustics-fog.png"
         if settings.startup["shibadisaster-cwa-pelagos-larger-water-ripples"].value then
-            pelagos_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/tess-fog.png"
+            pelagos_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         end
         pelagos_fog.fog_type = "gleba"
 

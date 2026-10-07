@@ -7,7 +7,7 @@ if true then
         muria_fog.color1 = settings.startup["shibadisaster-cwa-muria-fog-color"].value
         muria_fog.color2 = settings.startup["shibadisaster-cwa-muria-fog-color"].value
         muria_fog.tick_factor = 0.00003
-        muria_fog.detail_noise_texture.filename = "__celestial-weather__/graphics/entity/dense-clouds.png"
+        muria_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
 
         data.raw["planet"]["muria"].surface_render_parameters["fog"] = muria_fog
     end
@@ -25,7 +25,7 @@ if true then
         local muria_large_acid_spore = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         muria_large_acid_spore.name = "muria_large_acid_spore"
         muria_large_acid_spore.color = settings.startup["shibadisaster-cwa-muria-spore-color"].value
-        muria_large_acid_spore.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        muria_large_acid_spore.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         muria_large_acid_spore.start_scale = 0.0
         muria_large_acid_spore.end_scale = 2.0
         muria_large_acid_spore.movement_slow_down_factor = 1.0
@@ -34,7 +34,7 @@ if true then
         local muria_small_acid_spore = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         muria_small_acid_spore.name = "muria_small_acid_spore"
         muria_small_acid_spore.color = settings.startup["shibadisaster-cwa-muria-spore-color"].value
-        muria_small_acid_spore.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        muria_small_acid_spore.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         muria_small_acid_spore.start_scale = 0.0
         muria_small_acid_spore.end_scale = 1.0
         muria_small_acid_spore.movement_slow_down_factor = 1.0
@@ -43,7 +43,7 @@ if true then
         local muria_very_small_acid_spore = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         muria_very_small_acid_spore.name = "muria_very_small_acid_spore"
         muria_very_small_acid_spore.color = settings.startup["shibadisaster-cwa-muria-spore-color"].value
-        muria_very_small_acid_spore.animation.filename = "__celestial-weather__/graphics/entity/fire-particles.png"
+        muria_very_small_acid_spore.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
         muria_very_small_acid_spore.start_scale = 0.0
         muria_very_small_acid_spore.end_scale = 0.3
         muria_very_small_acid_spore.movement_slow_down_factor = 1.0
@@ -81,7 +81,7 @@ if true then
         local muria_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         muria_cloud_a.name = "muria_cloud_a"
         muria_cloud_a.color = settings.startup["shibadisaster-cwa-muria-cloud-color"].value
-        muria_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        muria_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         muria_cloud_a.animation.frame_count = 1
         muria_cloud_a.animation.size = 512
         muria_cloud_a.start_scale = 3.0
@@ -103,7 +103,7 @@ if true then
         local muria_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         muria_cloud_b.name = "muria_cloud_b"
         muria_cloud_b.color = settings.startup["shibadisaster-cwa-muria-cloud-color"].value
-        muria_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-b.png"
+        muria_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-b.png"
         muria_cloud_b.animation.frame_count = 1
         muria_cloud_b.animation.size = 512
         muria_cloud_b.start_scale = 3.0
@@ -130,7 +130,7 @@ if true then
         muria_dust.color = settings.startup["shibadisaster-cwa-muria-spore-color"].value
         muria_dust.start_scale = 1.0
         muria_dust.end_scale = 1.0
-        muria_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        muria_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         muria_dust.movement_slow_down_factor = 1.0
         data.extend({muria_dust})
 

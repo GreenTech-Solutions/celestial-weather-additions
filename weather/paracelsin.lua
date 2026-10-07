@@ -15,8 +15,8 @@ if true then
     if settings.startup["shibadisaster-cwa-paracelsin-always-dark"].value then
         data.raw["planet"]["paracelsin"].surface_render_parameters.day_night_cycle_color_lookup = {
             {0.00000000, "identity"},
-            {0.00000001, "__celestial-weather-additions__/graphics/luts/cryovolcanic_paracelsin_night.png"},
-            {0.99999999, "__celestial-weather-additions__/graphics/luts/cryovolcanic_paracelsin_night.png"}
+            {0.00000001, "__celestial-weather-additions-updated__/graphics/luts/cryovolcanic_paracelsin_night.png"},
+            {0.99999999, "__celestial-weather-additions-updated__/graphics/luts/cryovolcanic_paracelsin_night.png"}
         }
     end
 

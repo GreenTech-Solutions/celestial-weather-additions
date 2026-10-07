@@ -9,7 +9,7 @@ if true then
         vesta_fog.color1 = settings.startup["shibadisaster-cwa-vesta-fog-color"].value
         vesta_fog.color2 = settings.startup["shibadisaster-cwa-vesta-fog-color"].value
         vesta_fog.tick_factor = 0.000005
-        vesta_fog.detail_noise_texture.filename = "__celestial-weather__/graphics/entity/dense-clouds.png"
+        vesta_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
         vesta_fog.fog_type = "gleba"
 
         data.raw["planet"]["vesta"].surface_render_parameters["fog"] = vesta_fog
@@ -48,7 +48,7 @@ if true then
         vesta_thick_clouds.fade_in_duration = 120 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds.fade_away_duration = 120 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds.render_layer = "air-entity-info-icon"
-        vesta_thick_clouds.animation.filename = "__celestial-weather-additions__/graphics/vfx/diffuse-cloud.png"
+        vesta_thick_clouds.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/diffuse-cloud.png"
         vesta_thick_clouds.animation.frame_count = 1
         vesta_thick_clouds.animation.size = 512
         vesta_thick_clouds.animation.blend_mode = "additive"
@@ -74,7 +74,7 @@ if true then
         vesta_thick_clouds_white_a.fade_in_duration = 80 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_a.fade_away_duration = 80 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_a.render_layer = "floor"
-        vesta_thick_clouds_white_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        vesta_thick_clouds_white_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         vesta_thick_clouds_white_a.animation.frame_count = 1
         vesta_thick_clouds_white_a.animation.size = 512
         vesta_thick_clouds_white_a.animation.blend_mode = "additive"
@@ -89,7 +89,7 @@ if true then
         vesta_thick_clouds_white_b.fade_in_duration = 80 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_b.fade_away_duration = 80 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_b.render_layer = "smoke"
-        vesta_thick_clouds_white_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-b.png"
+        vesta_thick_clouds_white_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-b.png"
         vesta_thick_clouds_white_b.animation.frame_count = 1
         vesta_thick_clouds_white_b.animation.size = 512
         vesta_thick_clouds_white_b.animation.blend_mode = "additive"
@@ -104,7 +104,7 @@ if true then
         vesta_thick_clouds_white_c.fade_in_duration = 160 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_c.fade_away_duration = 160 * settings.startup["shibadisaster-cwa-vesta-cloud-duration-multiplier"].value
         vesta_thick_clouds_white_c.render_layer = "air-entity-info-icon"
-        vesta_thick_clouds_white_c.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        vesta_thick_clouds_white_c.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         vesta_thick_clouds_white_c.animation.frame_count = 1
         vesta_thick_clouds_white_c.animation.size = 512
         vesta_thick_clouds_white_c.animation.blend_mode = "additive"

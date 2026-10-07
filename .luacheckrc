@@ -1,0 +1,30 @@
+-- luacheck config for tools/check.sh
+std = "lua52"
+max_line_length = false
+exclude_files = { "node_modules/**" }
+
+-- the mod defines its helpers as globals at the top level of a file
+allow_defined_top = true
+
+read_globals = {
+  -- Factorio's globals across stages (https://lua-api.factorio.com/latest/auxiliary/libraries.html)
+  "mods", "settings", "feature_flags", "defines", "util", "serpent", "log", "localised_print", "table_size",
+  "game", "script", "remote", "commands", "rendering", "rcon", "helpers", "prototypes",
+  table = { fields = { "deepcopy", "compare" } },
+  -- units from __core__/lualib/util.lua
+  "grams", "kg", "tons", "second", "minute", "hour", "meter",
+}
+-- data-stage code writes into data.raw
+globals = { "data", "storage" }
+
+
+-- upstream style, kept as is so the code stays close to the original
+ignore = {
+  "611", "612", "613", "614", -- whitespace-only lines and trailing whitespace
+}
+files["weather/paracelsin.lua"] = {
+  ignore = {
+    "211", -- unused common_effects
+    "542", -- empty if branch
+  },
+}

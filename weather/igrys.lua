@@ -10,7 +10,7 @@ if true then
         igrys_fog.color1 = settings.startup["shibadisaster-cwa-igrys-fog-color"].value
         igrys_fog.color2 = settings.startup["shibadisaster-cwa-igrys-fog-color"].value
         igrys_fog.tick_factor = 0.000005
-        igrys_fog.detail_noise_texture.filename = "__celestial-weather-additions__/graphics/vfx/tess-fog.png"
+        igrys_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         igrys_fog.fog_type = "gleba"
 
         data.raw["planet"]["igrys"].surface_render_parameters = data.raw["planet"]["igrys"].surface_render_parameters or {}
@@ -24,7 +24,7 @@ if true then
         local igrys_cloud_a = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         igrys_cloud_a.name = "igrys_cloud_a"
         igrys_cloud_a.color = {177.0/255.0 * 0.2, 99.0/255.0 * 0.2, 20.0/255.0 * 0.2, 1.0 * 0.2}
-        igrys_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        igrys_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         igrys_cloud_a.animation.frame_count = 1
         igrys_cloud_a.animation.size = 512
         igrys_cloud_a.animation.blend_mode = "additive"
@@ -47,7 +47,7 @@ if true then
         local igrys_cloud_b = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         igrys_cloud_b.name = "igrys_cloud_b"
         igrys_cloud_b.color = {177.0/255.0 * 0.2, 138.0/255.0 * 0.2, 81.0/255.0 * 0.2, 1.0 * 0.2}
-        igrys_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        igrys_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         igrys_cloud_b.animation.frame_count = 1
         igrys_cloud_b.animation.size = 512
         igrys_cloud_b.animation.blend_mode = "additive"
@@ -79,7 +79,7 @@ if true then
         igrys_sparks.fade_in_duration = 20
         igrys_sparks.fade_away_duration = 20
         igrys_sparks.render_layer = "smoke"
-        igrys_sparks.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        igrys_sparks.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         igrys_sparks.animation.frame_count = 1
         igrys_sparks.animation.line_length = 1
         igrys_sparks.animation.size = 512
@@ -108,7 +108,7 @@ if true then
         igrys_sparks_small.fade_in_duration = 20
         igrys_sparks_small.fade_away_duration = 20
         igrys_sparks_small.render_layer = "smoke"
-        igrys_sparks_small.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        igrys_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         igrys_sparks_small.animation.frame_count = 1
         igrys_sparks_small.animation.line_length = 1
         igrys_sparks_small.animation.size = 512
@@ -137,7 +137,7 @@ if true then
         igrys_sparks_large.fade_in_duration = 20
         igrys_sparks_large.fade_away_duration = 20
         igrys_sparks_large.render_layer = "smoke"
-        igrys_sparks_large.animation.filename = "__celestial-weather-additions__/graphics/vfx/star-a.png"
+        igrys_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/star-a.png"
         igrys_sparks_large.animation.frame_count = 1
         igrys_sparks_large.animation.line_length = 1
         igrys_sparks_large.animation.size = 512
@@ -162,7 +162,7 @@ if true then
         igrys_dust.color = {1.0, 0.875, 0.75}
         igrys_dust.start_scale = 2.0
         igrys_dust.end_scale = 2.0
-        igrys_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        igrys_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         igrys_dust.movement_slow_down_factor = 1.0
         data.extend({igrys_dust})
 

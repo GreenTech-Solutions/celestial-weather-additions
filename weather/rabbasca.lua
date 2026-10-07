@@ -11,7 +11,7 @@ if true then
         -- rabbasca_fog.color1 = {255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 1.0 * 0.5}
         -- rabbasca_fog.color2 = {255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 1.0 * 0.5}
         rabbasca_fog.tick_factor = 0.00003
-        rabbasca_fog.detail_noise_texture.filename = "__celestial-weather__/graphics/entity/dense-clouds.png"
+        rabbasca_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
 
         data.raw["planet"]["rabbasca"].surface_render_parameters["fog"] = rabbasca_fog
     end
@@ -21,7 +21,7 @@ if true then
         rabbasca_cloud_a.name = "rabbasca_cloud_a"
         -- rabbasca_cloud_a.color = {64.0/255.0 * 0.25, 31.0/255.0 * 0.25, 126.0/255.0 * 0.25, 1.0 * 0.25}
         rabbasca_cloud_a.color = {34.0/255.0 * 0.2, 25.0/255.0 * 0.2, 63.0/255.0 * 0.2, 1.0 * 0.2}
-        rabbasca_cloud_a.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-c.png"
+        rabbasca_cloud_a.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-c.png"
         rabbasca_cloud_a.animation.frame_count = 1
         rabbasca_cloud_a.animation.size = 512
         rabbasca_cloud_a.animation.blend_mode = "additive"
@@ -45,7 +45,7 @@ if true then
         rabbasca_cloud_b.name = "rabbasca_cloud_b"
         -- rabbasca_cloud_b.color = {41.0/255.0 * 0.25, 31.0/255.0 * 0.25, 126.0/255.0 * 0.25, 1.0 * 0.25}
         rabbasca_cloud_b.color = {57.0/255.0 * 0.2, 48.0/255.0 * 0.2, 63.0/255.0 * 0.2, 1.0 * 0.2}
-        rabbasca_cloud_b.animation.filename = "__celestial-weather-additions__/graphics/vfx/cloud-a.png"
+        rabbasca_cloud_b.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/cloud-a.png"
         rabbasca_cloud_b.animation.frame_count = 1
         rabbasca_cloud_b.animation.size = 512
         rabbasca_cloud_b.animation.blend_mode = "additive"
@@ -77,7 +77,7 @@ if true then
         rabbasca_sparks.fade_in_duration = 30
         rabbasca_sparks.fade_away_duration = 30
         rabbasca_sparks.render_layer = "smoke"
-        rabbasca_sparks.animation.filename = "__celestial-weather-additions__/graphics/vfx/pointy-spark-a.png"
+        rabbasca_sparks.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/pointy-spark-a.png"
         rabbasca_sparks.animation.frame_count = 100
         rabbasca_sparks.animation.line_length = 10
         rabbasca_sparks.animation.size = math.floor(2048 / 10)
@@ -106,7 +106,7 @@ if true then
         rabbasca_sparks_small.fade_in_duration = 30
         rabbasca_sparks_small.fade_away_duration = 30
         rabbasca_sparks_small.render_layer = "smoke"
-        rabbasca_sparks_small.animation.filename = "__celestial-weather-additions__/graphics/vfx/pointy-spark-a.png"
+        rabbasca_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/pointy-spark-a.png"
         rabbasca_sparks_small.animation.frame_count = 100
         rabbasca_sparks_small.animation.line_length = 10
         rabbasca_sparks_small.animation.size = math.floor(2048 / 10)
@@ -135,7 +135,7 @@ if true then
         rabbasca_sparks_large.fade_in_duration = 15
         rabbasca_sparks_large.fade_away_duration = 15
         rabbasca_sparks_large.render_layer = "smoke"
-        rabbasca_sparks_large.animation.filename = "__celestial-weather-additions__/graphics/vfx/pointy-spark-a.png"
+        rabbasca_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/vfx/pointy-spark-a.png"
         rabbasca_sparks_large.animation.frame_count = 100
         rabbasca_sparks_large.animation.line_length = 10
         rabbasca_sparks_large.animation.size = math.floor(2048 / 10)
@@ -160,7 +160,7 @@ if true then
         rabbasca_dust.color = {0.4, 0.2, 0.4, 0.4}
         rabbasca_dust.start_scale = 2.0
         rabbasca_dust.end_scale = 2.0
-        rabbasca_dust.animation.filename = "__celestial-weather__/graphics/entity/sand-particles.png"
+        rabbasca_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
         data.extend({rabbasca_dust})
 
         local rabbasca_weather_dust = table.deepcopy(common_effects.cluster_particles)
