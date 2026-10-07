@@ -1,13 +1,14 @@
 {
-    "name": "celestial-weather-additions",
+    "name": "celestial-weather-additions-updated",
     "version": "1.2.1",
-    "title": "Celestial Weather Additions",
-    "author": "shibadisaster",
-    "factorio_version": "2.0",
+    "title": "Celestial Weather Additions (2.1)",
+    "author": "shibadisaster, updated by Alex Green",
+    "homepage": "https://github.com/GreenTech-Solutions/celestial-weather-additions",
+    "factorio_version": "2.1",
     "dependencies": [
-        "base >= 2.0",
-        "space-age",
-        "celestial-weather",
+        "base >= 2.1.0",
+        "space-age >= 2.1.0",
+        "celestial-weather-updated",
         "?rubia",
         "?Muria",
         "?Paracelsin",
@@ -18,9 +19,10 @@
         "?Igrys",
         "?pelagos",
         "?alchemy-khemia",
-        "?carna"
+        "?carna",
+        "! celestial-weather-additions"
     ],
-    "description": "Addon for Celestial Weather that adds more weather VFX for some newer modded planets!",
+    "description": "Addon for Celestial Weather that adds more weather VFX for some newer modded planets!\nCelestial Weather Additions by shibadisaster, updated for Factorio 2.1 on top of Celestial Weather (Updated). Setting names are unchanged.",
     "license": "MIT",
     "space_travel_required": true,
     "expansion_shaders_required": true
