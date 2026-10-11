@@ -19,6 +19,7 @@ if true then
         carna_fog.color2 = settings.startup["shibadisaster-cwa-carna-plasma-fog-color-2"].value
         carna_fog.tick_factor = 0.001 --0.000005
         carna_fog.shape_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/solid.png"
+        carna_fog.shape_noise_texture.size = 512
         -- carna_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/vfx/tess-fog.png"
         carna_fog.fog_type = "gleba"
 
