@@ -238,7 +238,7 @@ if mods["Paracelsin"] then
             type = "bool-setting",
             name = "shibadisaster-cwa-enable-paracelsin-changes",
             setting_type = "startup",
-            default_value = false,
+            default_value = true,
             order = "d0"
         }
     })
