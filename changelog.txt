@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2026-10-13
+  Features:
+    - Celestial Weather is merged into this mod, now named Celestial Weather Next: remove Celestial Weather (2.1 Fork), your settings carry over
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 2026-10-13
   Features:
