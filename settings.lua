@@ -1,3 +1,6 @@
+-- Celestial Weather settings (merged base mod), names unchanged so existing values carry over
+require("__celestial-weather-additions-updated__.celestial-weather.settings")
+
 -- TODO: make settings disappear when relevant mod isn't loaded
 if mods["rubia"] then
     data:extend({

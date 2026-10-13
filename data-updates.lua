@@ -1,6 +1,10 @@
 -- Most code here adapted from Celestial Weather mod by Varaxia!
 -- PLEASE REPORT ANY CRASHES TO ME BECAUSE IT'S PROBABLY DUE TO ONE OF THESE UPDATING
 
+-- Celestial Weather (Varaxia, 2.1 fork by TheN8mare) is merged into this mod and runs first: the planet files below
+-- build on its effects (Paracelsin recolors its pa_snow).
+require("__celestial-weather-additions-updated__.celestial-weather.data-updates")
+
 -- nested so we can potentially hide settings when the corresponding mod is disabled without crashing
 if mods["rubia"] then
     if settings.startup["shibadisaster-cwa-enable-rubia-changes"].value then

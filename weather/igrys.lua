@@ -162,7 +162,7 @@ if true then
         igrys_dust.color = {1.0, 0.875, 0.75}
         igrys_dust.start_scale = 2.0
         igrys_dust.end_scale = 2.0
-        igrys_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
+        igrys_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
         igrys_dust.movement_slow_down_factor = 1.0
         data.extend({igrys_dust})
 

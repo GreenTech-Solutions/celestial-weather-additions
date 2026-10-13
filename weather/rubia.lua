@@ -36,7 +36,7 @@ if true then
     --     rubia_fog.color1 = {0.822, 0.700, 0.564, 0.5}
     --     rubia_fog.color2 = {0.822, 0.700, 0.564, 0.5}
     --     rubia_fog.tick_factor = 0.003
-    --     rubia_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
+    --     rubia_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/entity/dense-clouds.png"
 
     --     data.raw["planet"]["rubia"].surface_render_parameters["fog"] = rubia_fog
     -- end
@@ -105,7 +105,7 @@ if true then
         rubia_dust.duration = 60
         rubia_dust.fade_in_duration = 30
         rubia_dust.fade_away_duration = 30
-        rubia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
+        rubia_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
         data.extend({rubia_dust})
 
         local rubia_weather_dust = table.deepcopy(common_effects.cluster_particles)

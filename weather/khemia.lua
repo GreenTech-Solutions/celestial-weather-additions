@@ -9,7 +9,7 @@ if true then
         local khemia_dust = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         khemia_dust.name = "khemia_dust"
         khemia_dust.color = {1.0, 0.875, 0.75}
-        khemia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
+        khemia_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
         data.extend({khemia_dust})
 
         local khemia_weather_dust = table.deepcopy(common_effects.cluster_particles)

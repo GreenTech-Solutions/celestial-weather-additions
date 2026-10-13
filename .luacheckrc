@@ -13,3 +13,10 @@ files["weather/paracelsin.lua"] = {
     "542", -- empty if branch
   },
 }
+-- Celestial Weather, merged as is; its globals and stray values are fixed in the next release
+files["celestial-weather/data-updates.lua"] = {
+  ignore = {
+    "113", -- mo_weather_s and co_weather_s read outside the block that declares them local
+    "531", -- `filename = "…", data.extend{…}`: a stray comma, the call still runs
+  },
+}
