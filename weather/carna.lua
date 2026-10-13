@@ -42,7 +42,7 @@ if true then
         carna_sparks.fade_in_duration = 60
         carna_sparks.fade_away_duration = 60
         carna_sparks.render_layer = "smoke"
-        carna_sparks.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        carna_sparks.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         carna_sparks.animation.blend_mode = "additive"
         data:extend({carna_sparks})
 
@@ -68,7 +68,7 @@ if true then
         carna_sparks_large.fade_in_duration = 60
         carna_sparks_large.fade_away_duration = 60
         carna_sparks_large.render_layer = "smoke"
-        carna_sparks_large.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        carna_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         carna_sparks_large.animation.blend_mode = "additive"
         data:extend({carna_sparks_large})
 
@@ -94,7 +94,7 @@ if true then
         carna_sparks_small.fade_in_duration = 60
         carna_sparks_small.fade_away_duration = 60
         carna_sparks_small.render_layer = "smoke"
-        carna_sparks_small.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        carna_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         carna_sparks_small.animation.blend_mode = "additive"
         data:extend({carna_sparks_small})
 

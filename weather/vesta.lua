@@ -9,7 +9,7 @@ if true then
         vesta_fog.color1 = settings.startup["shibadisaster-cwa-vesta-fog-color"].value
         vesta_fog.color2 = settings.startup["shibadisaster-cwa-vesta-fog-color"].value
         vesta_fog.tick_factor = 0.000005
-        vesta_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
+        vesta_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/entity/dense-clouds.png"
         vesta_fog.fog_type = "gleba"
 
         data.raw["planet"]["vesta"].surface_render_parameters["fog"] = vesta_fog

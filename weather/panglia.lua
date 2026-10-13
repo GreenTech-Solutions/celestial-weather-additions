@@ -14,7 +14,7 @@ if true then
         panglia_sparks.fade_in_duration = 60
         panglia_sparks.fade_away_duration = 60
         panglia_sparks.render_layer = "smoke"
-        panglia_sparks.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        panglia_sparks.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks.animation.frame_count = 1
         -- panglia_sparks.animation.line_length = 1
         -- panglia_sparks.animation.size = 512
@@ -42,7 +42,7 @@ if true then
         panglia_sparks_small.fade_in_duration = 60
         panglia_sparks_small.fade_away_duration = 60
         panglia_sparks_small.render_layer = "smoke"
-        panglia_sparks_small.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        panglia_sparks_small.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks_small.animation.frame_count = 1
         -- panglia_sparks_small.animation.line_length = 1
         -- panglia_sparks_small.animation.size = 512
@@ -70,7 +70,7 @@ if true then
         panglia_sparks_large.fade_in_duration = 60
         panglia_sparks_large.fade_away_duration = 60
         panglia_sparks_large.render_layer = "smoke"
-        panglia_sparks_large.animation.filename = "__celestial-weather-updated__/graphics/entity/fire-particles.png"
+        panglia_sparks_large.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
         -- panglia_sparks_large.animation.frame_count = 1
         -- panglia_sparks_large.animation.line_length = 1
         -- panglia_sparks_large.animation.size = 512
@@ -142,7 +142,7 @@ if true then
         local panglia_dust = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
         panglia_dust.name = "panglia_dust"
         panglia_dust.color = {126.0/255.0, 255.0/255.0, 236.0/255.0}
-        panglia_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
+        panglia_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
         data.extend({panglia_dust})
 
         local panglia_weather_dust = table.deepcopy(common_effects.cluster_particles)

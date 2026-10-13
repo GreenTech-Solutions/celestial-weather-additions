@@ -11,7 +11,7 @@ if true then
         -- rabbasca_fog.color1 = {255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 1.0 * 0.5}
         -- rabbasca_fog.color2 = {255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 255.0/255.0 * 0.5, 1.0 * 0.5}
         rabbasca_fog.tick_factor = 0.00003
-        rabbasca_fog.detail_noise_texture.filename = "__celestial-weather-updated__/graphics/entity/dense-clouds.png"
+        rabbasca_fog.detail_noise_texture.filename = "__celestial-weather-additions-updated__/graphics/entity/dense-clouds.png"
 
         data.raw["planet"]["rabbasca"].surface_render_parameters["fog"] = rabbasca_fog
     end
@@ -160,7 +160,7 @@ if true then
         rabbasca_dust.color = {0.4, 0.2, 0.4, 0.4}
         rabbasca_dust.start_scale = 2.0
         rabbasca_dust.end_scale = 2.0
-        rabbasca_dust.animation.filename = "__celestial-weather-updated__/graphics/entity/sand-particles.png"
+        rabbasca_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
         data.extend({rabbasca_dust})
 
         local rabbasca_weather_dust = table.deepcopy(common_effects.cluster_particles)
