@@ -697,3 +697,74 @@ if mods["carna"] then
         }
     })
 end
+
+-- Nauvis: off by default, the developers kept rain and lowland fog for Gleba
+data:extend({
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-rain",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a0"
+    },
+    {
+        type = "int-setting",
+        name = "cwn-nauvis-rain-amount",
+        setting_type = "startup",
+        default_value = 5,
+        minimum_value = 1,
+        maximum_value = 30,
+        order = "0a1"
+    },
+    {
+        type = "double-setting",
+        name = "cwn-nauvis-rain-volume",
+        setting_type = "startup",
+        default_value = 0.15,
+        minimum_value = 0,
+        maximum_value = 1,
+        order = "0a2"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-deepwater-fog",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a3"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-water-fog",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a4"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-falling-leaves",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a5"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-pollen",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a6"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-golden-hours",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a7"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-wind-gusts",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a8"
+    }
+})

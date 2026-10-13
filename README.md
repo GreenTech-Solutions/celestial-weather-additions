@@ -13,6 +13,7 @@ Vanilla planets:
 * **Vulcanus**: ash, acid rain from the sulfuric acid vents, fire particles.
 * **Fulgora**: sandstorms with fog.
 * **Aquilo**: snowstorms with fog.
+* **Nauvis**, off by default, as vanilla keeps it clear: turn on any of rain and lowland fog over the lakes as on Gleba, falling leaves in forests, pollen over grasslands, golden sunsets and dawns, and wind gusts. All of it uses vanilla graphics and sounds.
 
 Modded planets:
 

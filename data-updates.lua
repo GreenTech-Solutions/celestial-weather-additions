@@ -71,3 +71,5 @@ if mods["carna"] then
         require("__celestial-weather-additions-updated__.weather.carna") -- still wip!
     end
 end
+
+require("__celestial-weather-additions-updated__.weather.nauvis")
