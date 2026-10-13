@@ -1,92 +1,105 @@
-**A fork of [Celestial Weather Additions](https://mods.factorio.com/mod/celestial-weather-additions) by shibadisaster, updated for Factorio 2.1.** All credit for the mod goes to shibadisaster. It runs on top of [Celestial Weather (Updated)](https://mods.factorio.com/mod/celestial-weather-updated), the 2.1 fork of Celestial Weather. Setting names are unchanged, so your settings carry over. Source: [GreenTech-Solutions/celestial-weather-additions](https://github.com/GreenTech-Solutions/celestial-weather-additions). Report problems with this fork in its discussion tab, not to the original author.
+# Celestial Weather Next
+
+Static weather and visual effects for vanilla and modded planets: sandstorms, snowstorms, rain, dust, ash, fog and energy sparks. Every effect can be toggled in the mod settings, and most have their own particle amount, speed or color.
+
+This is [Celestial Weather](https://mods.factorio.com/mod/celestial-weather) and [Celestial Weather Additions](https://mods.factorio.com/mod/celestial-weather-additions) in one mod, for Factorio 2.1. Planets that are not installed are simply skipped.
+
+> **Coming from Celestial Weather (2.1 Fork)?** Remove it: this mod already includes it and will not load next to it. Setting names are unchanged, so your settings carry over.
+
+## Features
+
+Vanilla planets:
+
+* **Vulcanus**: ash, acid rain from the sulfuric acid vents, fire particles.
+* **Fulgora**: sandstorms with fog.
+* **Aquilo**: snowstorms with fog.
+
+Modded planets:
+
+* **[Moshine](https://mods.factorio.com/mod/Moshine)**: sandstorms with fog, fire particles.
+* **[Corrundum](https://mods.factorio.com/mod/corrundum)**: sandstorms with fog, acid rain.
+* **[Muluna](https://mods.factorio.com/mod/planet-muluna)**: dust.
+* **[Lignumis](https://mods.factorio.com/mod/lignumis)**: rain.
+* **Snowstorms** on Frozeta from [Secretas](https://mods.factorio.com/mod/secretas), Lemures from [Dea Dia](https://mods.factorio.com/mod/dea-dia-system) and Nix from [Metal and Stars](https://mods.factorio.com/mod/metal-and-stars).
+* **[Paracelsin](https://mods.factorio.com/mod/Paracelsin)**: a volcanic winter: black ashy snowfall and a planet that is always dark, which sets it apart from other frozen planets and fits its 0% solar power. On by default at the request of the Paracelsin author; turn it off for the plain snowstorm.
+* **[Muria](https://mods.factorio.com/mod/Muria)**: acidic fog with magenta spores from the acidophile lichens, and green acid clouds.
+* **[Rubia](https://mods.factorio.com/mod/rubia)**: much stronger wind, with fast particles that match its 300 km/h wind speed.
+* **[Vesta](https://mods.factorio.com/mod/skewer_planet_vesta)**: thicker fog and clouds, so the edge of the sea of clouds looks diffuse instead of abrupt.
+* **[Pelagos](https://mods.factorio.com/mod/pelagos)**: tropical color grading and slight caustics on the water surface.
+* **[Panglia](https://mods.factorio.com/mod/panglia_planet)**: teal clouds and dust, fog over the zones of sped-up time.
+* **[Rabbasca](https://mods.factorio.com/mod/planet-rabbasca)**: clouds, fog, dust and magenta sparks of the planet's energy field.
+* **[Cubium](https://mods.factorio.com/mod/cubium)**: clouds and blue energy sparks.
+* **[Igrys](https://mods.factorio.com/mod/Igrys)**: orange starlike particles and dust.
+* **[Khemia](https://mods.factorio.com/mod/alchemy-khemia)**: magenta starlike particles and dust.
+* **[Carna](https://mods.factorio.com/mod/carna)**: plasma fog and sparks (work in progress).
+
+## Known issues
+
+* Adding the mod to an existing save may make the fog move much faster. It is harmless.
+
+Report problems in the discussion tab or on [GitHub](https://github.com/GreenTech-Solutions/celestial-weather-additions/issues).
 
 ---
 
-# Celestial Weather Additions
+# Previews
 
-Unofficial addon for Factorio mod [Celestial Weather](https://mods.factorio.com/mod/celestial-weather) that adds more weather VFX for some newer modded planets! Originally made for a personal playthrough but I decided to upload it :3
+If a video does not load, the Additions previews are also in [this album](https://imgur.com/a/celestial-weather-additions-TTQhTTf).
 
-This mod is intended to be highly customizable in the same way the base Celestial Weather mod is. Almost every effect/change can be modified or toggled
-in mod settings. Currently adds the following VFX to modded planets:
+## Vulcanus
+![Vulcanus](https://i.imgur.com/9bvDttM.mp4)
 
-*In case the following don't load for whatever reason, check [here](https://imgur.com/a/celestial-weather-additions-TTQhTTf)*
-######Some weather effects slightly modified, will rerecord soon!
----
+## Fulgora
+![Fulgora](https://i.imgur.com/6pyP2PO.mp4)
 
-## [Panglia](https://mods.factorio.com/mod/panglia_planet)
+## Aquilo
+![Aquilo](https://i.imgur.com/ULYMLGi.mp4)
 
-![https://i.imgur.com/JPWXVMJ.mp4](https://i.imgur.com/JPWXVMJ.mp4)
+## Moshine
+![Moshine](https://i.imgur.com/JJg1CTL.mp4)
 
-- Panglia has teal/cyan clouds and dust
+## Lignumis
+![Lignumis](https://i.imgur.com/FWrJxI4.mp4)
 
-## [Pelagos](https://mods.factorio.com/mod/pelagos)
+## Paracelsin
+![Paracelsin](https://i.imgur.com/4itmLbo.mp4)
 
-![https://i.imgur.com/UnIJp3r.mp4](https://i.imgur.com/UnIJp3r.mp4)
+## Muria
+![Muria](https://i.imgur.com/loDyPE0.mp4)
 
-- Pelagos has altered color grading to make it look more tropical and differentiate it from water coloration on other planets, also includes slight water surface caustics (lowland fog <3)
+## Rubia
+![Rubia](https://i.imgur.com/WWT4hEX.mp4)
 
-## [Rubia](https://mods.factorio.com/mod/rubia)
+## Vesta
+![Vesta](https://i.imgur.com/APB3kWW.mp4)
 
-![https://i.imgur.com/WWT4hEX.mp4](https://i.imgur.com/WWT4hEX.mp4)
+## Pelagos
+![Pelagos](https://i.imgur.com/UnIJp3r.mp4)
 
-- Rubia's wind effects are much more intense and particles move much faster to make them more representative of the 300km/h wind speed
+## Panglia
+![Panglia](https://i.imgur.com/JPWXVMJ.mp4)
 
-## [Vesta](https://mods.factorio.com/mod/skewer_planet_vesta)
+## Rabbasca
+![Rabbasca](https://i.imgur.com/xJkLVgR.mp4)
 
-![https://i.imgur.com/APB3kWW.mp4](https://i.imgur.com/APB3kWW.mp4)
+## Cubium
+![Cubium](https://i.imgur.com/Fk3SUt5.mp4)
 
-- Vesta has more pronounced fog and clouds in order to make the boundary of the sea of clouds look more diffuse and less abrupt
+## Igrys
+![Igrys](https://i.imgur.com/O7uwsK9.mp4)
 
-## [Muria](https://mods.factorio.com/mod/Muria)
-
-![https://i.imgur.com/loDyPE0.mp4](https://i.imgur.com/loDyPE0.mp4)
-
-- Muria has acidic fog with magenta spores (from the acidophile lichens) floating around as well as green acid clouds
-
-## [Paracelsin](https://mods.factorio.com/mod/Paracelsin)
-
-![https://i.imgur.com/4itmLbo.mp4](https://i.imgur.com/4itmLbo.mp4)
-
-- Paracelsin, being a cryovolcanic planet, is now subject to a volcanic winter to differentiate it from other frozen planets (and to further justify its default 0% solar power in atmosphere), meaning it has black ashy snowfall and is always dark (arrowless belts mod snuck into here oops)
-
-## [Rabbasca](https://mods.factorio.com/mod/planet-rabbasca)
-
-![https://i.imgur.com/xJkLVgR.mp4](https://i.imgur.com/xJkLVgR.mp4)
-
-- Rabbasca has clouds, fog, dust, and magenta energy sparks to represent the planet's energy field
-
-## [Cubium](https://mods.factorio.com/mod/cubium)
-
-![https://i.imgur.com/Fk3SUt5.mp4](https://i.imgur.com/Fk3SUt5.mp4)
-
-- Cubium has clouds and blue energy sparks
-
-## [Igrys](https://mods.factorio.com/mod/Igrys)
-
-![https://i.imgur.com/O7uwsK9.mp4](https://i.imgur.com/O7uwsK9.mp4)
-
-- Igrys has orange starlike particles and dust
-
-## [Khemia](https://mods.factorio.com/mod/alchemy-khemia)
-
-![https://i.imgur.com/zUbejwJ.mp4](https://i.imgur.com/zUbejwJ.mp4)
-
-- Khemia has magenta starlike particles and dust
-
-
-Credits:
-- Certain effects made using [mebiusbox's EffectTextureMaker](https://mebiusbox.github.io/contents/EffectTextureMaker/)
-- Some effects (obviously) based on assets in Celestial Weather
-- Thumbnail based on Panglia and Vesta's starmap icons
-
-If any of the original mod developers have issues with this mod or anyone else has suggestions feel free to contact me on Discord! (shibadisaster)
-This project was made with love for Celestial Weather and all of these planet mods <3
+## Khemia
+![Khemia](https://i.imgur.com/zUbejwJ.mp4)
 
 ---
 
-## Credits and license
+# Credits
 
-- shibadisaster, the author of [Celestial Weather Additions](https://mods.factorio.com/mod/celestial-weather-additions)
-- Varaxia, the author of [Celestial Weather](https://mods.factorio.com/mod/celestial-weather), and TheN8mare for [Celestial Weather (Updated)](https://mods.factorio.com/mod/celestial-weather-updated)
+* [Varaxia](https://mods.factorio.com/user/Varaxia): the original [Celestial Weather](https://mods.factorio.com/mod/celestial-weather), the weather of the vanilla planets and of Moshine, Corrundum, Muluna, Lignumis, Frozeta, Lemures and Nix, and its textures and rain sound.
+* [shibadisaster](https://mods.factorio.com/user/shibadisaster): [Celestial Weather Additions](https://mods.factorio.com/mod/celestial-weather-additions), the effects for Paracelsin, Muria, Rubia, Vesta, Pelagos, Panglia, Rabbasca, Cubium, Igrys, Khemia and Carna, and the thumbnail (based on the Panglia and Vesta starmap icons).
+* [TheN8mare](https://mods.factorio.com/user/TheN8mare): [Celestial Weather (2.1 Fork)](https://mods.factorio.com/mod/celestial-weather-updated), which kept Celestial Weather alive on Factorio 2.1.
+* [Deadpoolweid](https://mods.factorio.com/user/Deadpoolweid): the 2.1 update of Celestial Weather Additions, the merge into one mod and its maintenance.
+* lyx_kljk: the Chinese translation of Celestial Weather.
+* The Foundry members, who helped Varaxia figure out modding.
+* Some effects were made with [mebiusbox's EffectTextureMaker](https://mebiusbox.github.io/contents/EffectTextureMaker/).
 
-MIT, as the original.
+MIT license, as all the mods it is made of. Source: [GreenTech-Solutions/celestial-weather-additions](https://github.com/GreenTech-Solutions/celestial-weather-additions).
