@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2026-10-13
+  Bugfixes:
+    - settings for planets of other mods showed even when the planet mod was not installed
+    - the Muluna dust particle amount setting did nothing; it works now, and its default of 2 doubles the dust
+    - the rain on Vulcanus, Corrundum and Lignumis replaced the planet's own ambient sounds: Vulcanus lost its distant rumble and flames, Corrundum its distant thunder
+---------------------------------------------------------------------------------------------------
 Version: 1.5.0
 Date: 2026-10-13
   Features:
