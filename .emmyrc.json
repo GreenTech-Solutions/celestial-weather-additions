@@ -12,8 +12,7 @@
   },
   "workspace": {
     "ignoreGlobs": [
-      "node_modules/**",
-      "celestial-weather/**"
+      "node_modules/**"
     ]
   },
   "diagnostics": {

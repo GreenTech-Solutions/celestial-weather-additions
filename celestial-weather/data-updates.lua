@@ -58,6 +58,20 @@ local fog = {
 
 
 ------ helpers ------
+-- The 2.1 fork added some effects to the list twice. Each is now added once, as a cluster of as many particles,
+-- so the density players know stays the same.
+local function twice(effect)
+  if effect.type == "cluster" then
+    effect.cluster_count = effect.cluster_count * 2
+  else
+    effect.type = "cluster"
+    effect.cluster_count = 2
+    effect.distance = 0
+    effect.distance_deviation = 0
+  end
+  return effect
+end
+
 -- Adds a sound to the planet's semi-persistent ambient sounds instead of replacing them: Vulcanus lost its distant
 -- rumble and flames and Corrundum its distant thunder to the rain.
 local function add_semi_persistent(planet, definition)
@@ -76,7 +90,7 @@ end
 
 
 ------ vulcanus ------
-vu_effects = {}
+local vu_effects = {}
 -- ash --
 if settings.startup["enable-vulcanus-weather-ash"].value then
   local vu_ash = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
@@ -85,12 +99,12 @@ if settings.startup["enable-vulcanus-weather-ash"].value then
   vu_ash.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
   data:extend({vu_ash})
 
-  vu_weather_a = table.deepcopy(direct_particles)
+  local vu_weather_a = table.deepcopy(direct_particles)
   vu_weather_a.action_delivery.source_effects.smoke_name = "vu_ash"
   vu_weather_a.action_delivery.source_effects.speed = {-0.16, 0.4}
   vu_weather_a.action_delivery.source_effects.speed_multiplier = settings.startup["vulcanus-ash-particle-speed"].value
 
-  table.insert(vu_effects, vu_weather_a)
+  table.insert(vu_effects, twice(vu_weather_a))
 end
 -- rain --
 if settings.startup["enable-vulcanus-weather-rain"].value then
@@ -106,7 +120,7 @@ if settings.startup["enable-vulcanus-weather-rain"].value then
   vu_rain.animation.scale = 1.3
   data:extend({vu_rain})
 
-  vu_weather_r = table.deepcopy(direct_particles)
+  local vu_weather_r = table.deepcopy(direct_particles)
   vu_weather_r.action_delivery.source_effects.smoke_name = "vu_rain"
   vu_weather_r.action_delivery.source_effects.speed = {-0.06, 0.5}
   vu_weather_r.action_delivery.source_effects.speed_multiplier = settings.startup["vulcanus-rain-particle-speed"].value
@@ -125,7 +139,7 @@ if settings.startup["enable-vulcanus-weather-rain"].value then
     }
   })
 
-  table.insert(vu_effects, vu_weather_r)
+  table.insert(vu_effects, twice(vu_weather_r))
 end
 -- fire particles--
 if settings.startup["enable-vulcanus-weather-fire"].value then
@@ -135,26 +149,14 @@ if settings.startup["enable-vulcanus-weather-fire"].value then
   vu_fire.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
   data:extend({vu_fire})
 
-  vu_weather_f = table.deepcopy(direct_particles)
+  local vu_weather_f = table.deepcopy(direct_particles)
   vu_weather_f.action_delivery.source_effects.smoke_name = "vu_fire"
   vu_weather_f.action_delivery.source_effects.speed = {-0.16, -0.4}
   vu_weather_f.action_delivery.source_effects.speed_multiplier = settings.startup["vulcanus-fire-particle-speed"].value
 
-  table.insert(vu_effects, vu_weather_f)
+  table.insert(vu_effects, twice(vu_weather_f))
 end
 -- implement --
-if vu_weather_a then
-  table.insert(vu_effects, vu_weather_a)
-end
-
-if vu_weather_r then
-  table.insert(vu_effects, vu_weather_r)
-end
-
-if vu_weather_f then
-  table.insert(vu_effects, vu_weather_f)
-end
-
 if #vu_effects > 0 then
   data.raw["planet"]["vulcanus"].ticks_between_player_effects = 1
   data.raw["planet"]["vulcanus"].player_effects = vu_effects
@@ -169,7 +171,7 @@ if mods ["planet-muluna"] and settings.startup["enable-muluna-weather"].value th
   local mu_dust = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
   mu_dust.name = "mu_dust"
   mu_dust.color = {0.670, 0.682, 0.674}
-  mu_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png",
+  mu_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
   data.extend{(mu_dust)}
 
   -- a cluster, so the particle amount setting works: a direct trigger has no cluster_count and ignored it
@@ -192,7 +194,7 @@ if settings.startup["enable-fulgora-weather"].value then
   local fu_sand = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
   fu_sand.name = "fu_sand"
   fu_sand.color = {0.741, 0.616, 0.596}
-  fu_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png",
+  fu_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
   data.extend{(fu_sand)}
 
   local fu_weather = table.deepcopy(cluster_particles)
@@ -214,13 +216,13 @@ if settings.startup["enable-fulgora-weather"].value then
 end
 
 ------ moshine ------
-mo_effects = {}
+local mo_effects = {}
 -- sand --
 if mods["Moshine"] and settings.startup["enable-moshine-weather-sand"].value then
   local mo_sand = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
   mo_sand.name = "mo_sand"
   mo_sand.color = {1, 0.855, 0.624}
-  mo_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png",
+  mo_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
   data.extend{(mo_sand)}
 
   local mo_weather_s = table.deepcopy(cluster_particles)
@@ -241,42 +243,34 @@ if mods["Moshine"] and settings.startup["enable-moshine-weather-sand"].value the
   table.insert(mo_effects, mo_weather_s)
 end
 -- fire particles --
-if settings.startup["enable-moshine-weather-fire"].value then
+if mods["Moshine"] and settings.startup["enable-moshine-weather-fire"].value then
   local mo_fire = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
   mo_fire.name = "mo_fire"
   mo_fire.color = {1.0, 1.0, 1.0}
   mo_fire.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/fire-particles.png"
   data:extend({mo_fire})
 
-  mo_weather_f = table.deepcopy(direct_particles)
+  local mo_weather_f = table.deepcopy(direct_particles)
   mo_weather_f.action_delivery.source_effects.smoke_name = "mo_fire"
   mo_weather_f.action_delivery.source_effects.speed = {-0.16, -0.4}
   mo_weather_f.action_delivery.source_effects.speed_multiplier = settings.startup["moshine-fire-particle-speed"].value
 
-  table.insert(mo_effects, mo_weather_f)
+  table.insert(mo_effects, twice(mo_weather_f))
 end
 -- implement
-if mo_weather_s then
-  table.insert(mo_effects, mo_weather_s)
-end
-
-if mo_weather_f then
-  table.insert(mo_effects, mo_weather_f)
-end
-
-if mods["Moshine"] and #mo_effects > 0 then
+if #mo_effects > 0 then
   data.raw["planet"]["moshine"].ticks_between_player_effects = 1
   data.raw["planet"]["moshine"].player_effects = mo_effects
 end
 
 ------ corrundum ------
-co_effects = {}
+local co_effects = {}
 -- sand --
 if mods["corrundum"] and settings.startup["enable-corrundum-weather-sand"].value then
   local co_sand = table.deepcopy(data.raw["trivial-smoke"]["aquilo-snow-smoke"])
   co_sand.name = "co_sand"
   co_sand.color = {0.494, 0.380, 0.290}
-  co_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png",
+  co_sand.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png"
   data.extend{(co_sand)}
 
   local co_weather_s = table.deepcopy(cluster_particles)
@@ -309,7 +303,7 @@ if mods["corrundum"] and settings.startup["enable-corrundum-weather-rain"].value
   co_rain.animation.scale = 0.8
   data:extend({co_rain})
 
-  co_weather_r = table.deepcopy(cluster_particles)
+  local co_weather_r = table.deepcopy(cluster_particles)
   co_weather_r.cluster_count = 4
   co_weather_r.action_delivery.source_effects.smoke_name = "co_rain"
   co_weather_r.action_delivery.source_effects.speed = {-0.02, 0.5}
@@ -321,18 +315,10 @@ if mods["corrundum"] and settings.startup["enable-corrundum-weather-rain"].value
     }
   })
 
-  table.insert(co_effects, co_weather_r)
+  table.insert(co_effects, twice(co_weather_r))
 end
 -- implement
-if co_weather_s then
-  table.insert(co_effects, co_weather_s)
-end
-
-if co_weather_r then
-  table.insert(co_effects, co_weather_r)
-end
-
-if mods["corrundum"] and #co_effects > 0 then
+if #co_effects > 0 then
   data.raw["planet"]["corrundum"].ticks_between_player_effects = 1
   data.raw["planet"]["corrundum"].player_effects = co_effects
 end
@@ -482,7 +468,7 @@ if mods["lignumis"] and settings.startup["enable-lignumis-weather"].value then
   li_rain.animation.scale = 0.8
   data:extend({li_rain})
 
-  li_weather = table.deepcopy(cluster_particles)
+  local li_weather = table.deepcopy(cluster_particles)
   li_weather.cluster_count = 10
   li_weather.action_delivery.source_effects.smoke_name = "li_rain"
   li_weather.action_delivery.source_effects.speed = {-0.02, 0.5}
