@@ -57,6 +57,24 @@ local fog = {
 
 
 
+------ helpers ------
+-- Adds a sound to the planet's semi-persistent ambient sounds instead of replacing them: Vulcanus lost its distant
+-- rumble and flames and Corrundum its distant thunder to the rain.
+local function add_semi_persistent(planet, definition)
+  planet.persistent_ambient_sounds = planet.persistent_ambient_sounds or {}
+  local list = planet.persistent_ambient_sounds.semi_persistent
+  if not list then
+    list = {}
+  elseif list.sound then
+    list = {list}
+  end
+  table.insert(list, definition)
+  planet.persistent_ambient_sounds.semi_persistent = list
+end
+
+
+
+
 ------ vulcanus ------
 vu_effects = {}
 -- ash --
@@ -101,12 +119,11 @@ if settings.startup["enable-vulcanus-weather-rain"].value then
   data.raw["planet"]["vulcanus"].surface_render_parameters = data.raw["planet"]["vulcanus"]["surface_render_parameters"] or {}
   data.raw["planet"]["vulcanus"].surface_render_parameters["fog"] = vu_fog
 
-  data.raw["planet"]["vulcanus"].persistent_ambient_sounds = data.raw["planet"]["vulcanus"].persistent_ambient_sounds or {}
-  data.raw["planet"]["vulcanus"].persistent_ambient_sounds.semi_persistent = {{
+  add_semi_persistent(data.raw["planet"]["vulcanus"], {
     sound = {
       filename = "__celestial-weather-additions-updated__/sounds/rain.ogg", volume = 0.1
     }
-  }}
+  })
 
   table.insert(vu_effects, vu_weather_r)
 end
@@ -298,12 +315,11 @@ if mods["corrundum"] and settings.startup["enable-corrundum-weather-rain"].value
   co_weather_r.action_delivery.source_effects.speed = {-0.02, 0.5}
   co_weather_r.action_delivery.source_effects.speed_multiplier = settings.startup["corrundum-rain-particle-speed"].value
 
-  data.raw["planet"]["corrundum"].persistent_ambient_sounds = data.raw["planet"]["corrundum"].persistent_ambient_sounds or {}
-  data.raw["planet"]["corrundum"].persistent_ambient_sounds.semi_persistent = {{
+  add_semi_persistent(data.raw["planet"]["corrundum"], {
     sound = {
       filename = "__celestial-weather-additions-updated__/sounds/rain.ogg", volume = 0.2
     }
-  }}
+  })
 
   table.insert(co_effects, co_weather_r)
 end
@@ -477,12 +493,11 @@ if mods["lignumis"] and settings.startup["enable-lignumis-weather"].value then
   li_fog.color2 = {0.431, 0.592, 0.741, 1.0}
   li_fog.tick_factor = 0.0002
 
-  data.raw["planet"]["lignumis"].persistent_ambient_sounds = data.raw["planet"]["lignumis"].persistent_ambient_sounds or {}
-  data.raw["planet"]["lignumis"].persistent_ambient_sounds.semi_persistent = {{
+  add_semi_persistent(data.raw["planet"]["lignumis"], {
     sound = {
       filename = "__celestial-weather-additions-updated__/sounds/rain.ogg", volume = 0.2
     }
-  }}
+  })
 -- implement --
   data.raw["planet"]["lignumis"].ticks_between_player_effects = 1.0
   data.raw["planet"]["lignumis"].player_effects =  {(li_weather)}
