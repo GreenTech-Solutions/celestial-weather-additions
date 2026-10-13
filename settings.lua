@@ -738,5 +738,33 @@ data:extend({
         setting_type = "startup",
         default_value = false,
         order = "0a4"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-falling-leaves",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a5"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-pollen",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a6"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-golden-hours",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a7"
+    },
+    {
+        type = "bool-setting",
+        name = "cwn-nauvis-wind-gusts",
+        setting_type = "startup",
+        default_value = false,
+        order = "0a8"
     }
 })
