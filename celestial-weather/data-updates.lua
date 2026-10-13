@@ -155,7 +155,11 @@ if mods ["planet-muluna"] and settings.startup["enable-muluna-weather"].value th
   mu_dust.animation.filename = "__celestial-weather-additions-updated__/graphics/entity/sand-particles.png",
   data.extend{(mu_dust)}
 
-  mu_weather = table.deepcopy(direct_particles)
+  -- a cluster, so the particle amount setting works: a direct trigger has no cluster_count and ignored it
+  local mu_weather = table.deepcopy(direct_particles)
+  mu_weather.type = "cluster"
+  mu_weather.distance = 0
+  mu_weather.distance_deviation = 0
   mu_weather.cluster_count = settings.startup["muluna-particle-amount"].value
   mu_weather.action_delivery.source_effects.smoke_name= "mu_dust"
   mu_weather.action_delivery.source_effects.speed = {-0.28, 0.36}
