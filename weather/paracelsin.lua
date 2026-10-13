@@ -2,8 +2,9 @@ local common_effects = require("common.common-effects")
 
 ------ PARACELSIN ------
 if true then
-    if settings.startup["shibadisaster-cwa-paracelsin-ash-snow"].value then
-        local paracelsin_snow = data.raw["trivial-smoke"]["pa_snow"]
+    -- pa_snow comes from Celestial Weather and only exists while its Paracelsin weather is enabled
+    local paracelsin_snow = data.raw["trivial-smoke"]["pa_snow"]
+    if paracelsin_snow and settings.startup["shibadisaster-cwa-paracelsin-ash-snow"].value then
         paracelsin_snow.color = {0.188, 0.188, 0.188, 1.0}
         paracelsin_snow.start_scale = 0.8
         paracelsin_snow.end_scale = 1.2

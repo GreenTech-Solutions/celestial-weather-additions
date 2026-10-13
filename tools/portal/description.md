@@ -47,7 +47,7 @@ in mod settings. Currently adds the following VFX to modded planets:
 
 ![https://i.imgur.com/4itmLbo.mp4](https://i.imgur.com/4itmLbo.mp4)
 
-- (DISABLED BY DEFAULT) Paracelsin, being a cryovolcanic planet, is now subject to a volcanic winter to differentiate it from other frozen planets (and to further justify its default 0% solar power in atmosphere), meaning it has black ashy snowfall and is always dark (arrowless belts mod snuck into here oops)
+- Paracelsin, being a cryovolcanic planet, is now subject to a volcanic winter to differentiate it from other frozen planets (and to further justify its default 0% solar power in atmosphere), meaning it has black ashy snowfall and is always dark (arrowless belts mod snuck into here oops)
 
 ## [Rabbasca](https://mods.factorio.com/mod/planet-rabbasca)
 
