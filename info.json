@@ -30,6 +30,7 @@
     "! celestial-weather-updated",
     "! celestial-weather-additions"
   ],
+  "migrates_from": ["celestial-weather-additions", "celestial-weather", "celestial-weather-updated"],
   "description": "Static weather and visual effects for vanilla and modded planets: storms, rain, snow, dust, fog and sparks. Everything is toggleable in the settings.\nCelestial Weather by Varaxia and Celestial Weather Additions by shibadisaster in one mod, for Factorio 2.1. Replaces Celestial Weather (2.1 Fork): remove it. Setting names are unchanged.",
   "license": "MIT",
   "space_travel_required": true,

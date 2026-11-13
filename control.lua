@@ -21,8 +21,20 @@ local function modify_surface_visuals(surface)
 end
 
 
+local migrated_storage = require("migrated_storage")
+
+-- A save that had Celestial Weather or its Additions (migrates_from in info.json) hands their storage over; they keep
+-- nothing there, so it is dropped.
+local function drop_original_storage()
+    while migrated_storage.take({ "celestial-weather-additions", "celestial-weather", "celestial-weather-updated" }) do
+    end
+end
+
+script.on_configuration_changed(drop_original_storage)
+
 -- modify existing planets on load/save creation
 script.on_init(function()
+    drop_original_storage()
     for _, surface in pairs(game.surfaces) do
         modify_surface_visuals(surface)
     end
