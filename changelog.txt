@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2026-11-13
+  Features:
+    - a save with Celestial Weather or its Additions switches to this mod without leftover storage ([#8](https://github.com/GreenTech-Solutions/celestial-weather-additions/issues/8))
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2026-10-13
   Features:
