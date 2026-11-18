@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.0
+Date: 2026-11-18
+  Features:
+    - [locale] Russian translation ([#9](https://github.com/GreenTech-Solutions/celestial-weather-additions/issues/9))
+---------------------------------------------------------------------------------------------------
 Version: 1.7.0
 Date: 2026-11-13
   Features:
