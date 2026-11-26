@@ -15,6 +15,8 @@ Vanilla planets:
 * **Aquilo**: snowstorms with fog.
 * **Nauvis**, off by default, as vanilla keeps it clear: turn on any of rain and lowland fog over the lakes as on Gleba, falling leaves in forests, pollen over grasslands, golden sunsets and dawns, and wind gusts. All of it uses vanilla graphics and sounds.
 
+  With [Real Rain](https://mods.factorio.com/mod/real-rain) or [Real Wind](https://mods.factorio.com/mod/real-wind), Nauvis gets their weather cycle instead: this mod turns off and hides its own Nauvis rain (with Real Rain), falling leaves and wind gusts (with Real Wind). The lowland fog, pollen and golden hours stay.
+
 Modded planets:
 
 * **[Moshine](https://mods.factorio.com/mod/Moshine)**: sandstorms with fog, fire particles.

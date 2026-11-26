@@ -768,3 +768,25 @@ data:extend({
         order = "0a8"
     }
 })
+
+-- Real Rain and Real Wind give Nauvis their own weather cycle; the static rain, falling leaves and wind gusts of this
+-- mod would come on top of it, so they are turned off and hidden while those mods are installed
+local real_weather_overlaps = {
+    ["real-rain"] = { "cwn-nauvis-rain", "cwn-nauvis-rain-amount", "cwn-nauvis-rain-volume" },
+    ["real-wind"] = { "cwn-nauvis-falling-leaves", "cwn-nauvis-wind-gusts" }
+}
+for mod_name, setting_names in pairs(real_weather_overlaps) do
+    if mods[mod_name] then
+        for _, name in pairs(setting_names) do
+            for _, setting_type in pairs({ "bool-setting", "int-setting", "double-setting" }) do
+                local setting = data.raw[setting_type] and data.raw[setting_type][name]
+                if setting then
+                    setting.hidden = true
+                    if setting_type == "bool-setting" then
+                        setting.forced_value = false
+                    end
+                end
+            end
+        end
+    end
+end
