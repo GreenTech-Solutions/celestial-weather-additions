@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.0
+Date: 2026-11-26
+  Features:
+    - with Real Rain or Real Wind installed, the Nauvis rain, falling leaves and wind gusts of this mod are turned off and hidden, so Nauvis gets only their weather cycle ([#10](https://github.com/GreenTech-Solutions/celestial-weather-additions/issues/10))
+---------------------------------------------------------------------------------------------------
 Version: 1.8.0
 Date: 2026-11-18
   Features:
